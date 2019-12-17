@@ -4,8 +4,9 @@ Udacity dog breed project
 Build a pipeline to process real-world, user-supplied images.
 Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human face, the code will identify the resembling dog breed.
 
-Detect Humans
-Assess the Human Face Detector The submission returns the percentage of the first 100 images in the dog and human face datasets that include a detected, human face.
+Dog datset can be downloaded from https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip . Unzip the folder and place it in this project's home directory, at the location /dog_images.
+Human dataset can be downloaded from https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zipDetect .  Unzip the folder and place it in the home directory, at location /lfw.
+OpenCV provides many pre-trained face detectors, stored as XML files on https://github.com/opencv/opencv/tree/master/data/haarcascades . Download 'haarcascade_frontalface_alt.xml' and store it in haarcascades directory. 
 
 Detect Dogs
 Use a pre-trained VGG16 Net to find the predicted class for a given image: dog_detector function returns True if a dog is detected in an image and False if not.
